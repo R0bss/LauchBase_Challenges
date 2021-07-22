@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    {% block head %}
+        <title>Sobre - Rocketseat</title>
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css">
+
+    {% endblock %}
+
+    <body>
+        <header>
+            <div class="links">
+                {% for linkheader in about.links %}
+                    <a href="{{linkheader.url}}">{{linkheader.name}}</a>
+                {% endfor %}
+            </div>
+        </header>
+
+        <div id="wrapper">
+            <img src="{{about.image}}" alt="Logo Rocketseat">
+            <h1>{{about.name}}</h1>
+            <p>{{about.description}}</p>
+            <ul>
+                {% for about in about.skill%}
+                    <li>{{about.name}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div id="links-footer" class="links">
+            {% for link in about.linksfooter %}
+                <a href="{{link.url}}" target="_Blank">{{link.name}}</a>            
+            {% endfor %}
+        </div>
+    </body>
+
+</html>
