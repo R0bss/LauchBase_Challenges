@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Roberto Luiz Ramos Vargas",
+      "avatar_url": "https://source.unsplash.com/collection/71561100/500x500",
+      "birth": 14364518400000,
+      "type_graduate": "medio_complete",
+      "type_class": "P",
+      "services": "Matematica, Fisica, Espanhol",
+      "created_at": 1627955531641
+    },
+    {
+      "id": 2,
+      "name": "Roberto Luiz Ramos Vargas",
+      "avatar_url": "http://google.com",
+      "birth": 14364518400000,
+      "type_graduate": "medio_complete",
+      "type_class": "P",
+      "services": "ere",
+      "created_at": 1627955531643
+    }
+  ]
+}
