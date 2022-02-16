@@ -260,3 +260,14 @@ tbody tr td:last-child a {
 .table-container thead tr th,td {
     text-align: center;
 }
+
+tbody tr td span{
+    padding: 4px 10px;
+    background-color: var(--purple);
+    border-radius:16px;
+    color: var(--foreground);
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}

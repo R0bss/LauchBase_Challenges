@@ -6,11 +6,14 @@ const {age, date, graduate} = require('./utils')
 //Index
 exports.index = function(req, res){
 
-  const list = data.teachers
-
-  const teachers = {
-    ...list,
-    services: list.services.split(","),
+  const teachers = []
+  
+  for (i in data.teachers){
+    const teacher = {
+      ...data.teachers[i],  
+      services: data.teachers[i].services.split(","),
+    }
+    teachers.push(teacher)
   }
   
   return res.render("teachers/index", {teachers})
