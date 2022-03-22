@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --background: #282a36;
+    --current-line: #44475a;
+    --foreground:#f8f8f2;
+    --comment: #6273a4a9;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Robot', sans-serif;
+}
+
+header {
+    background-color: var(--current-line);
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a + a{
+    margin-left: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--foreground);
+    position: relative;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--green);
+}
+
+.links a:hover{
+    color: var(--green);
+}
+
+.links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: width 400ms ease-in-out;
+}
+
+/* == CARD == */
+
+.card{
+    background-color: var(--comment);
+    width: 800px;
+    min-height: 400px;
+
+    margin: 45px auto;
+
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.4);
+
+    animation: up 200ms ease-out;
+
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* === details === */
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 12px 0;
+}
+
+.details .item:first-child{
+    border: none;
+}
+.details h3,
+.details .item div:nth-child(1){
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--pink);
+    letter-spacing:0.7px;
+    font-weight: normal;
+}
+.details .item div:nth-child(2){
+    color: var(--foreground);
+    font-weight: bold;
+    font-size: 18px;
+}
+.details h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--foreground);
+    
+}
+
+.details .item span{
+    padding: 8px 16px;
+    background-color: var(--purple);
+    border-radius:16px;
+    color: var(--foreground);
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/* === Form === */
+
+input {
+    width: 100%;
+    outline: none;
+    color: var(--background);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: var(--foreground);
+}
+select {
+    background-color: var(--foreground);
+    color: var(--background);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+    color: var(--background)
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--background)
+}
+
+button[type="submit"],
+a.button{
+    padding: 8px 32px;
+    background-color: var(--green);
+    color: white;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+}
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: var(--red);
+}
+
+/* INDEX TEACHERS */
+
+.table-container {
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.table-container table {
+    border-spacing: 0;
+}
+
+.table-container thead tr th {
+    text-align: left;
+}
+
+td, th {
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+td{
+    color: var(--foreground);
+}
+
+th {
+    text-transform: uppercase;
+    color: var(--foreground);
+    font-size: 14px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
+}
+
+tbody tr td:last-child a {
+    background-color: var(--green);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.table-container thead tr th,td {
+    text-align: center;
+}
+
+tbody tr td span{
+    padding: 4px 10px;
+    background-color: var(--purple);
+    border-radius:16px;
+    color: var(--foreground);
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}

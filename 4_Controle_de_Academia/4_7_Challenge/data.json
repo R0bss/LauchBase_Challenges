@@ -1,0 +1,41 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Roberto Luiz Ramos Vargas",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "birth": 918172800000,
+      "created_at": 1647910015768
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "ROBERTO LUIZ RAMOS VARGAS",
+      "email": "luizroberto1957@hotmail.com",
+      "birth": 1647820800000,
+      "type_schooling": "5_elementary_school",
+      "workload": "21"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "ROBERTO LUIZ RAMOS VARGAS",
+      "email": "luizroberto1957@hotmail.com",
+      "birth": 1647820800000,
+      "type_schooling": "5_elementary_school",
+      "workload": "21"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "2",
+      "name": "Roberto Luiz Ramos Vargas",
+      "avatar_url": "https://st2.depositphotos.com/6544740/9337/i/950/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg",
+      "birth": 918172800000,
+      "type_graduate": "university_complete",
+      "type_class": "P",
+      "services": "Musculação, Natação",
+      "created_at": 1627955531643
+    }
+  ]
+}
