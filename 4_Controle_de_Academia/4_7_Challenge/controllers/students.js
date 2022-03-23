@@ -1,6 +1,6 @@
 const fs = require('fs');
 const data = require('../data.json');
-const {age, date, graduate} = require('../utils')
+const {age, date, schooling} = require('../utils')
 
 exports.index = function(req, res){
 
@@ -9,7 +9,8 @@ exports.index = function(req, res){
   for (i in data.students){
     const student = {
       ...data.students[i],  
-      services: data.students[i].services.split(","),
+      type_schooling: schooling(data.students[i].type_schooling),
+      //services: data.students[i].services.split(","),
     }
     students.push(student)
   }
@@ -49,7 +50,7 @@ exports.post = function(req, res){
     return res.redirect("/students")
   })
 }
-/*
+
 exports.show = function(req, res){
   const { id } = req.params;
   const foundstudent = data.students.find(function(student){
@@ -60,8 +61,8 @@ exports.show = function(req, res){
   const student = {
     ...foundstudent,
     age: age(foundstudent.birth),
-    type_graduate: graduate(foundstudent.type_graduate),
-    services: foundstudent.services.split(","),
+    type_schooling: schooling(foundstudent.type_schooling),
+    //services: foundstudent.services.split(","),
     created_at: new Intl.DateTimeFormat("pt-BR").format(foundstudent.created_at),
   }
   return res.render("students/show", {student})
@@ -125,4 +126,3 @@ exports.delete = function(req, res){
     return res.redirect("/students")
   })
 }
-*/

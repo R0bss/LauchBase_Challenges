@@ -32,5 +32,18 @@ module.exports = {
       case 'doctor_complete': return "Doutorado Completo"
       default: return ""
     }
+  },
+  schooling: function(value) {
+    switch (value) {
+      case '5_elementary_school': return "5° Ano Fundamental"
+      case '6_elementary_school': return "6° Ano Fundamental"
+      case '7_elementary_school': return "7° Ano Fundamental"
+      case '8_elementary_school': return "8° Ano Fundamental"
+      case '9_elementary_school': return "9° Ano Fundamental"
+      case '1_high_school': return "1° Ano Ensino Medio"
+      case '2_high_school': return "2° Ano Ensino Medio"
+      case '3_high_school': return "3° Ano Ensino Medio"
+      default: return ""
+    }
   }
 }

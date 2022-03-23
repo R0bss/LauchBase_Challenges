@@ -1,13 +1,6 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "Roberto Luiz Ramos Vargas",
-      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
-      "birth": 918172800000,
-      "created_at": 1647910015768
-    },
-    {
       "id": 2,
       "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
       "name": "ROBERTO LUIZ RAMOS VARGAS",
@@ -24,6 +17,15 @@
       "birth": 1647820800000,
       "type_schooling": "5_elementary_school",
       "workload": "21"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Roberto Luiz Ramos Vargas",
+      "email": "luizroberto1957@hotmail.com",
+      "birth": 918172800000,
+      "type_schooling": "3_high_school",
+      "workload": "30"
     }
   ],
   "teachers": [
