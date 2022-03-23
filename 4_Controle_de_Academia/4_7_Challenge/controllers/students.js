@@ -77,8 +77,8 @@ exports.edit = function(req, res){
   if (!foundstudent) return res.send("student not found!")
 
   const student = {
-    ... foundstudent,
-    birth: date(foundstudent.birth)
+    ...foundstudent,
+    birth: date(foundstudent.birth).iso
   }
 
   return res.render('students/edit', { student})

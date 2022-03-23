@@ -1,3 +1,16 @@
+const currentPage = location.pathname
+const menuItems = document.querySelectorAll("header .links a")
+
+for (item of menuItems) {
+    if (currentPage.includes(item.getAttribute("href"))) {
+        item.classList.add("active")
+    }
+}
+
+
+
+
+/*
 const modalOverlay = document.querySelector('.modal-overlay');
 const modal = document.querySelector('.modal');
 
@@ -11,7 +24,7 @@ for(let card of cards){
         //modalOverlay.querySelector("iframe").src = `https://blog.rocketseat.com.br/${postId}`
         window.location.href = `courses/${postId}`
     })
-}
+}*/
 /*
 document.querySelector(".maximize-modal").addEventListener("click", function(){
  
