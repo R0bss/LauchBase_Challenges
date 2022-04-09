@@ -1,0 +1,69 @@
+    <div class="item">
+      <div>Avatar Url</div>
+      <div>
+          <input 
+            type="url" 
+            name="avatar_url"
+            placeholder="http://"
+            value="{{student.avatar_url}}"
+          >
+      </div>
+    </div>
+    <div class="item">
+      <div>Nome Completo</div>
+      <div>
+        <input 
+          type="text" 
+          name="name"
+          placeholder= "Nome Completo"
+          value="{{student.name}}"
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div>Email</div>
+      <div>
+        <input 
+          type="email" 
+          name="email"
+          value="{{student.email}}"
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div>Data de Nascimento</div>
+      <div>
+        <input 
+          type="date" 
+          name="birth"
+          value="{{student.birth}}"
+        >
+      </div>
+    </div>
+    <div class="item">
+      <div>Ano Escolar</div>
+      <div>
+        <select name="type_schooling">
+          <option value="5_elementary_school" {% if student.type_schooling == "5_elementary_school" %}selected {%endif%} >5° Ano Fundamental</option>
+          <option value="6_elementary_school" {% if student.type_schooling == "6_elementary_school" %}selected {%endif%} >6° Ano Fundamental</option>
+          <option value="7_elementary_school" {% if student.type_schooling == "7_elementary_school" %}selected {%endif%} >7° Ano Fundamental</option>
+          <option value="8_elementary_school" {% if student.type_schooling == "8_elementary_school" %}selected {%endif%} >8° Ano Fundamental</option>
+          <option value="9_elementary_school" {% if student.type_schooling == "9_elementary_school" %}selected {%endif%} >9° Ano Fundamental</option>
+          <option value="1_high_school" {% if student.type_schooling == "1_high_school" %}selected {%endif%} >1° Ano Ensino Medio</option>
+          <option value="2_high_school" {% if student.type_schooling == "2_high_school" %}selected {%endif%} >2° Ano Ensino Medio</option>
+          <option value="3_high_school" {% if student.type_schooling == "3_high_school" %}selected {%endif%} >3° Ano Ensino Medio</option>
+        </select>
+      </div>
+    </div>
+    <div class="item">
+      <div>Carga Horaria (Semanal)</div>
+      <div>
+        <input 
+          type="number"
+          name="workload"
+          value="{{student.workload}}"
+        >
+      </div>
+    </div>
+    <button type="submit">Salvar</button>
+    

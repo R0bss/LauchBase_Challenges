@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "name": "Roberto Luiz Ramos Vargas",
+      "email": "luizroberto1957@hotmail.com",
+      "birth": 1647993600000,
+      "type_schooling": "1_high_school",
+      "workload": "21"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "2",
+      "name": "Roberto Luiz Ramos Vargas",
+      "avatar_url": "https://st2.depositphotos.com/6544740/9337/i/950/depositphotos_93376372-stock-photo-sunset-over-sea-pier.jpg",
+      "birth": 918172800000,
+      "type_graduate": "university_complete",
+      "type_class": "P",
+      "services": "Musculação, Natação",
+      "created_at": 1627955531643
+    }
+  ]
+}
